@@ -33,3 +33,19 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Admin username
+
+`Ashly.Kling43@example.com`
+
+### Admin Password
+
+`r_z3ZfcW_giDF24`
+
+### User Username
+
+`Gilbert_Littel@example.com`
+
+### User Password
+
+`wZrMcD3Wv93dsdsds`
