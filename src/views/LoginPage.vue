@@ -4,9 +4,9 @@
         <div class="d-flex align-center justify-center" style="height: 100vh">
             <v-sheet width="400" class="mx-auto">
                 <v-form fast-fail @submit.prevent="login" @keyup.enter="login">
-                    <v-text-field v-model="loginForm.email" label="Enter Email"></v-text-field>
+                    <v-text-field type="email" v-model="loginForm.email" label="Enter Email"></v-text-field>
 
-                    <v-text-field v-model="loginForm.password" label="Enter Password"></v-text-field>
+                    <v-text-field type="password" v-model="loginForm.password" label="Enter Password"></v-text-field>
                     <!-- <a href="#" class="text-body-2 font-weight-regular">Forgot Password?</a> -->
 
                     <v-btn type="submit" color="blue-accent-4" block class="mt-2">Sign in</v-btn>
