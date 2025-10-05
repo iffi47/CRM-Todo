@@ -41,10 +41,11 @@ import AppBar from './components/AppBar.vue';
 import HomePage from './views/HomePage.vue';
 const state = computed(() => store.state.user)
 onMounted(() => {
+  const user= JSON.parse(localStorage.getItem("user")) 
   if (localStorage.getItem("token") === null && localStorage.getItem("user") === null) {
     router.push({ name: "Login" })
 
-  } else if (localStorage.getItem("token") === "admin") {
+  } else if (user.isAdmin) {
     // store.commit("SET_USER", localStorage.getItem("user"))
     // store.commit("SET_TOKEN", localStorage.getItem("token"))
     links.value = Adminlinks.value

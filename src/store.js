@@ -61,6 +61,8 @@ const store = createStore({
     async login({ commit }, { email, password }) {
       const response = await axios.get(`${API_URL}users?email=${email}&password=${password}`)
       if (response.status === 200 && response.data.length > 0) {
+        console.log(response)
+        
         const user = response.data[0]
         commit('SET_USER', user)
         commit('SET_TOKEN', user.authToken)
