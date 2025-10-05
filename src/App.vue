@@ -45,15 +45,15 @@ onMounted(() => {
     router.push({ name: "Login" })
 
   } else if (localStorage.getItem("token") === "admin") {
-    store.commit("SET_USER", localStorage.getItem("user"))
-    store.commit("SET_TOKEN", localStorage.getItem("token"))
+    // store.commit("SET_USER", localStorage.getItem("user"))
+    // store.commit("SET_TOKEN", localStorage.getItem("token"))
     links.value = Adminlinks.value
     // console.log(links.value, Adminlinks.value);
   } else {
     links.value = Userlinks.value
 
-    store.commit("SET_USER", localStorage.getItem("user"))
-    store.commit("SET_TOKEN", localStorage.getItem("token"))
+    // store.commit("SET_USER", localStorage.getItem("user"))
+    // store.commit("SET_TOKEN", localStorage.getItem("token"))
   }
 })
 const links = ref([])
