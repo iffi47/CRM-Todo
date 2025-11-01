@@ -19,6 +19,7 @@ coverage
 
 # Editor directories and files
 .vscode/*
+.zed/*
 !.vscode/extensions.json
 .idea
 *.suo
@@ -27,3 +28,5 @@ coverage
 *.sln
 *.sw?
 package-lock.json
+CRM-Todo.code-workspace
+CRM-Todo.code-workspace/
