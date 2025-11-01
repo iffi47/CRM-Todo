@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
-import { VDataTable } from 'vuetify/labs/VDataTable'
+import { VDataTable } from 'vuetify/components'
 // Vuetify
 import { createVuetify } from 'vuetify'
 //Custome theme
